@@ -46,7 +46,7 @@ public class Mahasiswa {
         System.out.println("UKM : " + object1.ukm);
 
         // Calling
-//        Mahasiswa.university();
+     //Mahasiswa.university();
 
         // Setting and getting university
         Mahasiswa.setUniversity("Yonsei University");
