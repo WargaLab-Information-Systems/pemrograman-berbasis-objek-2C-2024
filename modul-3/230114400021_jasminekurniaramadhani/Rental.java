@@ -13,11 +13,11 @@ import java.util.Scanner;
 
 // Parent class
 public class Rental {
-    protected String jenis;
-    protected String merek;
-    protected String model;
-    protected String status;
-    protected int tahun;
+    String jenis;
+    String merek;
+    String model;
+    String status;
+    int tahun;
 
     public Rental (String jenis, String merek, String model, String status, int tahun) {
         this.jenis = jenis;
