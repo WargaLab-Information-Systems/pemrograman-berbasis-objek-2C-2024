@@ -1,23 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-package com.mycompany.rental;
-
-/**
- *
- * @author HP
- */
 import java.util.ArrayList;
 import java.util.Scanner;
 
 // Parent class
-public class Rental {
-    String jenis;
-    String merek;
-    String model;
-    String status;
-    int tahun;
+class Rental {
+    protected String jenis;
+    protected String merek;
+    protected String model;
+    protected String status;
+    protected int tahun;
 
     public Rental (String jenis, String merek, String model, String status, int tahun) {
         this.jenis = jenis;
@@ -36,7 +26,24 @@ public class Rental {
     }
 }
 
+// Child class Car
+class Car extends Rental {
+    public Car(String merek, String model, String status, int tahun) {
+        super("Mobil", merek, model, status, tahun);
+    }
+}
+
+// Child class Motorcycle
+class Motorcycle extends Rental {
+    public Motorcycle(String merek, String model, String status, int tahun) {
+        super("Motor", merek, model, status, tahun);
+    }
+}
+
 // Child class Bicycle
-
-
+class Bicycle extends Rental {
+    public Bicycle(String merek, String model, String status, int tahun) {
+        super("Sepeda", merek, model, status, tahun);
+    }
+}
 
