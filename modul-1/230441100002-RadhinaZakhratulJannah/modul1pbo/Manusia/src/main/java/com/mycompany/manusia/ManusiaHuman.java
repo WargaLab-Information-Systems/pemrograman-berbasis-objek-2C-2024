@@ -1,4 +1,4 @@
-package com.mycompany.manusia;
+ package com.mycompany.manusia;
 class manusia {
     String nama;
     String umur;
