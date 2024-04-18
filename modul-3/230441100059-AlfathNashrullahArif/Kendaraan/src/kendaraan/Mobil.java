@@ -9,10 +9,17 @@ package kendaraan;
  * @author ASUS
  */
 public class Mobil extends Kendaraan{
-
+    String fasilitas = "Mobil Ber - AC";
+    
         Mobil(String merek, String model, char status, int tahunKendaraan){
         super("Mobil", merek, model, status, tahunKendaraan);
-   
+        }
+        
+    @Override
+    void display(){
+        super.display();
+        System.out.println("Fasilitas    : "+this.fasilitas);
+        }
     }
     
-}
+

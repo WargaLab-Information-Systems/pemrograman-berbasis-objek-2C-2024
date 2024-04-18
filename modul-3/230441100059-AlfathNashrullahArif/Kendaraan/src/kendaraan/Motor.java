@@ -9,11 +9,16 @@ package kendaraan;
  * @author ASUS
  */
 public class Motor extends Kendaraan {
-
-    Motor(String merek, String model, char status, int tahunKendaraan){
+    String fasilitas = "Minimun 150cc" ;
+    
+        Motor(String merek, String model, char status, int tahunKendaraan){
         super("Motor", merek, model, status, tahunKendaraan);
     }
     
-    
-}
+    @Override
+    void display(){
+        super.display();
+        System.out.println("Fasilitas    : "+this.fasilitas);
+        }    
+    }
 

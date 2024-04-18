@@ -22,15 +22,19 @@ public class Kendaraan {
         this.status = status ;
         this.tahunKendaraan = tahunKendaraan ; 
     }
-    
+        
     void display(){
         System.out.println("\nInformasi Kendaraan:");
         System.out.println("Jenis Kendaraan : "+this.jenisKendaraan);
         System.out.println("Merk            : "+this.merek);
         System.out.println("Model           : "+this.model);
-        System.out.println("Status          : "+this.status);
         System.out.println("Tahun Kendaraan : "+this.tahunKendaraan);
     }
+    
+    char getStatus(){
+        return status ;
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
     }
