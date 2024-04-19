@@ -5,10 +5,18 @@
 package kendaraan;
 
 public class Motor extends Kendaraan {
-   
+      String fasilitas = "hemat bensin";
+      
     Motor(String merek, String model, char status, int tahun){
         super("Motor", merek, model, status, tahun);
     }
+    
+    @Override
+    void display(){
+        super.display();
+        System.out.println("motor ini hemat bensin");
+    }
+    
 }
 
 
