@@ -4,41 +4,30 @@
  */
 package kendaraan;
 
-/**
- *
- * @author USER
- */
 public class Kendaraan {
-
-    String jenis;
-    String merek;
-    String model;
-    String status;
-    int tahun;
+    String jenis ;
+    String merek ;
+    String model ;
+    char status ;
+    int tahun ;
     
-    Kendaraan(String jenis, String merek, String model, String status, int tahun) {
-        this.jenis = jenis;
-        this.merek = merek;
-        this.model = model;
-        this.status = status;
-        this.tahun = tahun;
+    Kendaraan(String jenis, String merek, String model, char status, int tahun){
+        this.jenis = jenis ;
+        this.merek = merek ; 
+        this.model = model ;
+        this.status = status ;
+        this.tahun = tahun ; 
     }
-    void info() {
-        System.out.println("Jenis knd : " + jenis);
-        System.out.println("Merek knd : " + merek);
-        System.out.println("Model knd : " + model);
-        System.out.println("Status knd : " + status);
-        System.out.println("Tahun knd : " + tahun);
+        
+    void info(){
+        System.out.println("\nInformasi Kendaraan :");
+        System.out.println("Jenis Kendaraan : "+this.jenis);
+        System.out.println("Merk            : "+this.merek);
+        System.out.println("Model           : "+this.model);
+        System.out.println("Tahun Kendaraan : "+this.tahun);
     }
-}
-class tersedia extends Kendaraan {
-    tersedia(String jenis, String merek, String model, int tahun) {
-        super(jenis, merek, model, "tersedia", tahun);
-    }
-}
-
-class sewa extends Kendaraan {
-    sewa(String jenis, String merek, String model, int tahun) {
-        super(jenis, merek, model, "doisewakan", tahun);
+    
+    char getStatus(){
+        return status ;
     }
 }
