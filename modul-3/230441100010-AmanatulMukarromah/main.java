@@ -4,19 +4,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package kendaraan;
-
 import java.util.Scanner;
-
 public class main {
 public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
       int jumlahKendaraan;
-
          System.out.print("Masukkan jumlah kendaraan yang akan di input: ");
          jumlahKendaraan = input.nextInt();
-
          Kendaraan[] daftarKendaraan = new Kendaraan[jumlahKendaraan];
-
          // Memasukkan data kendaraan
          for (int i = 0; i < jumlahKendaraan; i++) {
              System.out.println("\nMasukkan data kendaraan ke-" + (i + 1));
@@ -26,7 +21,7 @@ public static void main(String[] args) {
              String merek = input.next();
              System.out.print("Model: ");
              String model = input.next();
-             System.out.print("Status (Tersedia/Disewakan): ");
+             System.out.print("Status (T/D:) ");
              char status = input.next().charAt(0);
              System.out.print("Tahun: ");
              int tahun = input.nextInt();
@@ -41,12 +36,20 @@ public static void main(String[] args) {
              }
          }
 
-         // Menampilkan informasi kendaraan yang telah dimasukkan
+         
+         // Menampilkan informasi kend2araan yang telah dimasukkan
         System.out.println("\nDaftar Kendaraan:");
         for (Kendaraan kendaraan : daftarKendaraan) {
             kendaraan.display();
+            if (kendaraan.getstatus() == 'T'){
+                System.out.println("Status          : Tersedia");
+            } else if (kendaraan.getstatus() == 'D'){
+                System.out.println("Status          : Disewakan");
+            
+             }
+        
         }
-    }
+}
 }
 
 

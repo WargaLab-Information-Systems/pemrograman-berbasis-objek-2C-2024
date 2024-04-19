@@ -3,11 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package kendaraan;
-
-/**
- *
- * @author ASUS
- */
 public class Kendaraan {
     String jenisKendaraan ;
     String merek ;
@@ -28,7 +23,10 @@ public class Kendaraan {
         System.out.println("Jenis Kendaraan : "+this.jenisKendaraan);
         System.out.println("Merk            : "+this.merek);
         System.out.println("Model           : "+this.model);
-        System.out.println("Status          : "+this.status);
         System.out.println("Tahun Kendaraan : "+this.tahunKendaraan);
+    }
+    
+    char getstatus(){
+        return status;
     }
 }
