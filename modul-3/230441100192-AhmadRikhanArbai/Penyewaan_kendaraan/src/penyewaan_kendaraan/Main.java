@@ -59,12 +59,23 @@ public class Main {
                     } else {
                         boolean adaKendaraan = false;
                         for (int i = 0; i < jumlahKendaraan; i++) {
-                            if (daftarKendaraan[i] != null && daftarKendaraan[i].status == 'D') {
+                            if (daftarKendaraan[i] != null && daftarKendaraan[i].status == 'D' ) {
+                                String status = "Disewakan";
                                 System.out.println("Data kendaraan ke-" + (i + 1));
                                 System.out.println("Jenis: " + daftarKendaraan[i].jenis);
                                 System.out.println("Merek: " + daftarKendaraan[i].merek);
                                 System.out.println("Model: " + daftarKendaraan[i].model);
-                                System.out.println("Status: " + daftarKendaraan[i].status);
+                                System.out.println("Status: "+ status);
+                                System.out.println("Tahun: " + daftarKendaraan[i].tahun);
+                                adaKendaraan = true;
+                            }
+                            if (daftarKendaraan[i] != null && daftarKendaraan[i].status == 'T' ) {
+                                String status = "Tersedia";
+                                System.out.println("Data kendaraan ke-" + (i + 1));
+                                System.out.println("Jenis: " + daftarKendaraan[i].jenis);
+                                System.out.println("Merek: " + daftarKendaraan[i].merek);
+                                System.out.println("Model: " + daftarKendaraan[i].model);
+                                System.out.println("Status: "+status);
                                 System.out.println("Tahun: " + daftarKendaraan[i].tahun);
                                 adaKendaraan = true;
                             }
