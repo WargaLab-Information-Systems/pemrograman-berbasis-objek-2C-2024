@@ -2,8 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package modul3;
+package com.mycompany.modul3;
 
+/**
+ *
+ * @author LENOVO
+ */
 public class Mobil extends Kendaraan {
     private int pintu;
 
@@ -14,12 +18,10 @@ public class Mobil extends Kendaraan {
 
     @Override
     public void displayInfo() {
-        System.out.println("Jenis Kendaraan: " + jenis);
-        System.out.println("Merek: " + merek);
-        System.out.println("Model: " + model);
-        System.out.println("Status: " + (status == 'T' ? "Tersedia" : "Disewakan"));
-        System.out.println("Tahun Kendaraan: " + tahun);
+        super.displayInfo();
         System.out.println("Jumlah Pintu: " + pintu);
     }
 }
+
+
 
