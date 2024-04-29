@@ -1,14 +1,13 @@
-package com.mycompany.rental;
-
+package Rental;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<main> vehicles = new ArrayList<>();
+        ArrayList<Rental> vehicles = new ArrayList<>();
 
-        System.out.println("Masukkan data kendaraan:");
+        System.out.println("Masukkan data kendaraan");
 
         // Input data kendaraan
         System.out.print("Jumlah kendaraan yang akan dimasukkan: ");
@@ -23,7 +22,7 @@ public class main {
             String merek = scanner.nextLine();
             System.out.print("Model: ");
             String model = scanner.nextLine();
-            System.out.print("Status (Tersedia/D): ");
+            System.out.print("Status (Tersedia/Disewa): ");
             String status = scanner.nextLine();
             System.out.print("Tahun Kendaraan: ");
             int tahun = scanner.nextInt();
@@ -33,7 +32,7 @@ public class main {
             if (jenis.equalsIgnoreCase("Mobil")) {
                 rental = new Car(merek, model, status, tahun);
             } else if (jenis.equalsIgnoreCase("Motor")) {
-               rental = new Motorcycle(merek, model, status, tahun);
+                rental = new Motorcycle(merek, model, status, tahun);
             } else if (jenis.equalsIgnoreCase("Sepeda")) {
                 rental = new Bicycle(merek, model, status, tahun);
             } else {
@@ -54,4 +53,3 @@ public class main {
         scanner.close();
     }
 }
-
