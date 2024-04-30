@@ -124,6 +124,6 @@ public class Mahasiswa2 {
         System.out.println("ukm3:"+mhs.ukm5[2]);
         
         // Menampilkan nilai atribut static universitas
-        Mahasiswa2 .displayUniversitas();
+        Mahasiswa2.displayUniversitas();
     }   
-}
+}         
