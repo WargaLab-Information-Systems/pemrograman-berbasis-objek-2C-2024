@@ -19,7 +19,7 @@ public class Waktu extends Konversi{
         double hasil = 0.0;
         if(dari.equalsIgnoreCase("M") && menjadi.equalsIgnoreCase("J")){
             return nilai / 60;
-        } else if(dari.equalsIgnoreCase("Jam") && menjadi.equalsIgnoreCase("Menit")){
+        } else if(dari.equalsIgnoreCase("J") && menjadi.equalsIgnoreCase("M")){
             return nilai * 60;
         } else {
             System.out.println("Satuan Waktu tidak ada!");

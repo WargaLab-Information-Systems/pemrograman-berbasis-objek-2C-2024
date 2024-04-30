@@ -77,9 +77,7 @@ public class Main {
             input.nextLine();
             System.out.println("Y = Yes/N = No : ");
             String tanya = input.nextLine();
-            if (tanya.equalsIgnoreCase("N")){ 
-                break;
-            } 
+            if (tanya.equalsIgnoreCase("N")) break; 
         }  
     }
 }
