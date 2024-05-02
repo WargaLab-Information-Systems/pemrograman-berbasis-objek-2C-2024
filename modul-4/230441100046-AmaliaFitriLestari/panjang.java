@@ -8,19 +8,11 @@ public class panjang extends Konfersi {
     public panjang(String name) {
         super(name);
     }
-    @Override
+
     public double convert(double value) {
         // Implementasi konversi panjang
-        // Misalnya dari centimeter ke meter
-        if (getName().equalsIgnoreCase("centimeter")){
-           return ( value / 100); 
-//           meter ke kilometer
-        }else if (getName().equalsIgnoreCase("meter")){
-           return (value / 1000 ) ;    
-        }else {
-            System.out.println("satuan tidak valid");
-            return 0;
-        }
+        // Misalnya dari Meter ke Kilometer
+        return value / 1000;
     }
 }
 

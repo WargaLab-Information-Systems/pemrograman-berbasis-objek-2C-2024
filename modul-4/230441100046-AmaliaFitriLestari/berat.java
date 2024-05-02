@@ -8,18 +8,10 @@ public class berat extends Konfersi {
     public berat(String name) {
         super(name);
     }
-    @Override
+
     public double convert(double value) {
         // Implementasi konversi berat
         // Misalnya dari Gram ke Kilogram
-        if (getName().equalsIgnoreCase("gram")){
-           return ( value / 1000); 
-//           kilogram ke ton
-        }else if (getName().equalsIgnoreCase("kilogram")){
-           return (value / 1000 ) ;    
-        }else {
-            System.out.println("satuan tidak valid");
-            return 0;
-        }  
+        return value / 1000;
     }
 }

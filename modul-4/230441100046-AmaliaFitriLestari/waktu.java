@@ -9,20 +9,11 @@ public class waktu extends Konfersi {
         super(name);
         }
     
-    @Override
     public double convert(double value) {
         // Implementasi konversi waktu
-        // Misalnya dari detik ke menit 
-        
-        if (getName().equalsIgnoreCase("detik")){
-           return ( value / 60); 
-//           menit ke jam
-        }else if (getName().equalsIgnoreCase("menit")){
-           return (value / 60 );   
-        }else {
-            System.out.println("satuan tidak valid");
-            return 0;
+        // Misalnya dari Detik ke Menit
+        return value / 60;
     }
 }
-}
+
 
