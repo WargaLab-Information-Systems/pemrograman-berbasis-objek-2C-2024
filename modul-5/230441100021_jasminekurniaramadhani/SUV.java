@@ -8,11 +8,11 @@ package car;
  *
  * @author Lenovo
  */
-public class Sedan extends Car {
-     @Override
+public class SUV extends Car {
+    @Override
     void showFeature(){
         display();
-        System.out.println("Kelebihan Tipe MPV :");
+        System.out.println("Kelebihan Tipe SUV :");
         System.out.println("-> Kapasitas Penumpang yang Besar");
         System.out.println("-> Fleksibilitas Ruang Penumpang");
         System.out.println("-> Ruang Kargo yang Luas");
