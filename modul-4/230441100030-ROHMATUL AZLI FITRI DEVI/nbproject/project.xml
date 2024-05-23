@@ -3,11 +3,7 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-<<<<<<<< HEAD:modul-3/230441100030-ROHMATUL AZLI FITRI DEVI/nbproject/project.xml
-            <name>praktikumModul3</name>
-========
-            <name>mahasiswa</name>
->>>>>>>> 34e7efccd874f795892b31c6966869c592440b56:modul-1/230441100165-ZahratulAdzkaNafisaHafizh/Mahasiswa/nbproject/project.xml
+            <name>Satuan</name>
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>
