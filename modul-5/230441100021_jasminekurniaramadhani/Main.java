@@ -18,8 +18,8 @@ public class Main {
             System.out.println("\n->->Tipe Mobil<-<- ");
             System.out.println("1.Mobil Sport");
             System.out.println("2.Mobil Electric");
-            System.out.println("3.Mobil crossover");
-            System.out.println("4.Mobil sedan");
+            System.out.println("3.Mobil SUV");
+            System.out.println("4.Mobil MPV");
             
             Car car;
             while (true) {
@@ -34,15 +34,15 @@ public class Main {
                     break;
                 }
                 else if (pilihMobil.equals("3")) {
-                    car = new Crossover();
+                    car = new SUV();
                     break;
                 }
-                else if (pilihMobil.equals("3")) {
-                    car = new Sedan();
+                else if (pilihMobil.equals("4")) {
+                    car = new MPV();
                     break;
                 }
                 else{
-                    System.out.println("Input yang bener dong..!");
+                    System.out.println("SALAH!");
                 }
             }
             String inputMerk, inputModel;
@@ -57,6 +57,9 @@ public class Main {
             inputUser.nextLine();
             car.setAtribute(inputMerk, inputModel, inputTahunProduksi);
             car.showFeature();
+            Car car1 = new Car();
+            car1.display("modern"); 
+            car1.display(50000);
             System.out.println();
             while (true) {
                 System.out.print("Mau input lagi tidak ? ( y ) or ( t ) : ");
@@ -68,7 +71,7 @@ public class Main {
                     lanjut = false;
                     break;
                 } else {
-                    System.out.println("Yang bener dong..!");
+                    System.out.println("SALAH!");
                 }
 
             }

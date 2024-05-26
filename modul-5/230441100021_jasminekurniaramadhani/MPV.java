@@ -8,7 +8,7 @@ package car;
  *
  * @author Lenovo
  */
-public class Crossover extends Car{
+public class MPV extends Car{
      @Override
     void showFeature(){
         display();
@@ -20,5 +20,6 @@ public class Crossover extends Car{
         System.out.println("-> Effisiensi Bahan Bakar yang Baik");
         System.out.println("-> Kemudahan Manuver");
     }
+    
     
 }

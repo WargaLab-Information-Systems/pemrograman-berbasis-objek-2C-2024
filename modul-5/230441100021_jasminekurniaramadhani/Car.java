@@ -21,10 +21,20 @@ String merk, model;
     void showFeature(){
         System.out.println("Kelebihan dari mobil ini.");
     }
-
-    void display(){
+       void display(){
         System.out.println("\nMerk           : " + merk);
         System.out.println("Model          : " + model);
         System.out.println("Tahun Produksi : " + tahunProduksi);
     }
+    
+    void display(String info){
+       System.out.println("\njenis mobil: " + info);
+       
+    }
+    void display(int tempuh){
+        System.out.println("\nTotal jarak tempuh: " + tempuh + " km");
+       
+    }
+        
 }
+ 
