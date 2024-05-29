@@ -1,0 +1,5 @@
+penyewaan.kendaraan.Car
+penyewaan.kendaraan.Vehicle
+penyewaan.kendaraan.PenyewaanKendaraan
+penyewaan.kendaraan.RentalApp
+penyewaan.kendaraan.Motorcycle
