@@ -7,7 +7,7 @@ public class Mahasiswa2 {
      String jurusanProdii;
      String alamatt;
      String ukmm[]=new String[3];
-     // Atribut untuk menyimpan data
+     //keyword static Atribut untuk menyimpan data
     
     static String universitas;
     
@@ -111,7 +111,6 @@ public class Mahasiswa2 {
 //        for (String namaUKM : mhs.getUkm()) {
 //            System.out.println("- " + namaUKM);
 //        }
-
 
         // Menampilkan nilai atribut static universitas
         Mahasiswa2 .displayUniversitas();
